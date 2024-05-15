@@ -1,6 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
+// Adds an entered task to the list
 const addTask = () => {
 	if (inputBox.value === "") {
 		alert("Without a task I am taskless :(");
@@ -16,6 +17,7 @@ const addTask = () => {
 	saveData();
 };
 
+// Adds an X icon to a task that when clicked deletes that task from the list
 listContainer.addEventListener(
 	"click",
 	function (e) {
